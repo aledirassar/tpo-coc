@@ -1,0 +1,72 @@
+main{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.seccion-contacto{
+    width: 50%;
+}
+
+.seccion-contacto form{
+    width: 100%;
+    border: 1px slateblue solid;
+    border-radius: 4px;
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.dato-entrada{
+    margin: 1em 0;
+}
+
+input, textarea{
+    padding: .5em .3em;
+    border-radius: 4px;
+    width: 100%;
+}
+input{
+    line-height: 20px;
+}
+
+textarea{
+    width: 100%;
+    height: 20vh;
+}
+
+.boton-enviar{
+    background-color: slateblue;
+    color: #fff;
+    border: none;
+    font-size: 1em;
+    padding: .5em;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px){
+    main{
+        margin: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .seccion-contacto{
+        width: 100%;
+        margin: 3vh auto;
+    }
+
+    form{
+        width: 100%;
+        margin: auto;
+    }
+
+    .seccion-mapa{
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+
